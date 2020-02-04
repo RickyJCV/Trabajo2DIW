@@ -12,6 +12,9 @@
 
     <!-- Course CSS -->
     <link rel="stylesheet" ref="styles.css" />
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/97741dcd7f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -26,7 +29,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="menu">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
                             <a href="index.html" class="nav-link">Inicio</a>
                         </li>
@@ -55,8 +58,13 @@
 
 
                     <form class="form-inline">
-                        <input class="btn btn-primary btn-sm mr-2 bg-light text-dark" data-toggle="modal" data-target="#entrar" type="button" value="Login">
-                        <input class="btn btn-primary btn-sm bg-light text-dark" data-toggle="modal" data-target="#registro" type="button" value="Registro">
+                        <button class="btn btn-primary btn-sm mr-2 bg-light text-dark" data-toggle="modal" data-target="#entrar" type="button" value="Login">
+                            <span class="fas fa-sign-in-alt pr-2"></span>Login
+                        </button>
+
+                        <button class="btn btn-primary btn-sm bg-light text-dark" data-toggle="modal" data-target="#registro" type="button" value="Registro">
+                            <span class="fas fa-user-plus pr-2"></span>Registro
+                        </button>
                     </form>
                 </div>
             </nav>
