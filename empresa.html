@@ -41,16 +41,16 @@
                             </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-toggle="dropdown">Nosotros</a>
+                            <a class="nav-link dropdown-toggle active" data-toggle="dropdown">Nosotros</a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="empresa.html">La Empresa</a>
+                                <a class="dropdown-item active" href="empresa.html">La Empresa</a>
                                 <a class="dropdown-item" href="#">Trabaja con Nosotros</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" data-toggle="dropdown">Contacto</a>
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown">Contacto</a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item active" href="ubicacion.html">¿Dónde estamos?</a>
+                                <a class="dropdown-item" href="ubicacion.html">¿Dónde estamos?</a>
                                 <a class="dropdown-item" href="contacto.html">Servicio al cliente</a>
                             </div>
                         </li>
@@ -73,17 +73,56 @@
 
 
         <header class="row bg-dark justify-content-center pt-5 mt-3 mb-5">
-            <h1 class="text-capitalize text-white">¿Donde estámos?</h1>
+            <h1 class="text-capitalize text-white">La Empresa</h1>
         </header>
 
-        <!-- Mapa de ubicación -->
+        <!-- COLLAPSE -->
         <section class="row justify-content-center">
-            <!--Embeds-->
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.184238176903!2d-5.930196184235944!3d37.40911997982775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126c3c4d173efb%3A0xc6aacb7db2dd738!2sInstituto%20Tecnol%C3%B3gico%20Superior%20ADA!5e0!3m2!1ses!2ses!4v1581559470172!5m2!1ses!2ses"
-                    width="800" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-            </div>
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header bg-light" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    HISTORIA
+                </button>
+                        </h5>
+                    </div>
 
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            La empresa fué fundada en 2020 por Ricardo Cabrera, desde el instituto ADA ITS.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header bg-light" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    PROGRESO
+                </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            Pretendemos multiplicar exponencialmente la plantilla en los próximos años. Esta StartUp ha conseguido vincularse con múltiples marcas reconocidas mundialmente.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header bg-light" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    COMPROMISO
+                </button>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                            Esta StartUp pretende ofrecer ropa de calidad, a los mejores precios. Y pretendemos reducir cada vez más los precios y seguir ofreciendo productos de la mejor calidad.
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- PIE DE PÁGINA  -->
