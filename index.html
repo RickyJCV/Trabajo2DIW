@@ -8,13 +8,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <!-- Course CSS -->
     <link rel="stylesheet" ref="styles.css" />
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/97741dcd7f.js" crossorigin="anonymous"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js "
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous ">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js "
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous ">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js "
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous ">
+    </script>
+
+    <!--POPOVER-->
+    <script>
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+        })
+        $('.popover-dismiss').popover({
+            trigger: 'focus'
+        })
+    </script>
 
 </head>
 
@@ -25,7 +48,8 @@
         <!-- ALERTA -->
         <!-- Le pongo fixed-bottom para que no haya conflicto con el menú -->
         <div class="alert alert-dismissible fade show alert-warning fixed-bottom">
-            Utilizamos cookies propias y de terceros para obtener datos estadísticos de la navegación de nuestros usuarios y mejorar nuestros servicios. Si continúa navegando, consideramos que acepta su uso.
+            Utilizamos cookies propias y de terceros para obtener datos estadísticos de la navegación de nuestros
+            usuarios y mejorar nuestros servicios. Si continúa navegando, consideramos que acepta su uso.
             <button type="button" class="close" data-dismiss="alert">
                 <span>X</span>
             </button>
@@ -71,11 +95,13 @@
 
 
                     <form class="form-inline">
-                        <button class="btn btn-primary btn-sm mr-2 bg-light text-dark" data-toggle="modal" data-target="#entrar" type="button" value="Login">
+                        <button class="btn btn-primary btn-sm mr-2 bg-light text-dark" data-toggle="modal"
+                            data-target="#entrar" type="button" value="Login">
                             <span class="fas fa-sign-in-alt pr-2"></span>Login
                         </button>
 
-                        <button class="btn btn-primary btn-sm bg-light text-dark" data-toggle="modal" data-target="#registro" type="button" value="Registro">
+                        <button class="btn btn-primary btn-sm bg-light text-dark" data-toggle="modal"
+                            data-target="#registro" type="button" value="Registro">
                             <span class="fas fa-user-plus pr-2"></span>Registro
                         </button>
                     </form>
@@ -156,8 +182,10 @@
                         <div class="card-text mb-3">
                             Trabajamos con las marcas más conocidas de sudaderas.
                         </div>
-                        <!--BADGES-->
-                        <button type="button" class="btn btn-danger">Comprar <span
+                        <!--BADGES y POPOVER-->
+                        <button type="button" class="btn btn-danger" tabindex="0" data-toggle="popover"
+                            data-trigger="focus" data-placement="bottom" title="Rebajas"
+                            data-content="¡ Aprovecha las rebajas en sudaderas !">Comprar <span
                                 class="badge badge-light">OFERTAS</span></button>
                     </div>
                 </div>
@@ -335,11 +363,13 @@
                             </div>
                             <div class="form-group ">
                                 <label>Apellidos:</label>
-                                <input type="text " class="form-control " placeholder="Introduce tus apellidos " required>
+                                <input type="text " class="form-control " placeholder="Introduce tus apellidos "
+                                    required>
                             </div>
                             <div class="form-group ">
                                 <label>Email:</label>
-                                <input type="email " class="form-control " placeholder="Introduce tu correo electrónico " required>
+                                <input type="email " class="form-control "
+                                    placeholder="Introduce tu correo electrónico " required>
                             </div>
                             <div class="form-group ">
                                 <label>Contraseña:</label>
@@ -377,14 +407,9 @@
             });
         });
     </script>-->
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous ">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous ">
-    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous ">
-    </script>
+
+
+
 </body>
 
 </html>
