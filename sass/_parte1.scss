@@ -1,0 +1,11 @@
+#terminos .active {
+    background-color: #FFF !important;
+    color: #000 !important;
+}
+
+//VARIABLE
+$position-relative:relative;
+
+#terminos {
+    position: $position-relative;
+}

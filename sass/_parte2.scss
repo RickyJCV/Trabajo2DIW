@@ -1,0 +1,11 @@
+//Herencia
+%section {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+section {
+    @extend %section;
+    padding-right: 5px;
+    padding-left: 5px;
+}

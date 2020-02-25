@@ -1,5 +1,19 @@
-.active {
+#terminos .active {
   background-color: #FFF !important;
   color: #000 !important;
+}
+
+#terminos {
+  position: relative;
+}
+
+section {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+section {
+  padding-right: 5px;
+  padding-left: 5px;
 }
 /*# sourceMappingURL=style.css.map */
