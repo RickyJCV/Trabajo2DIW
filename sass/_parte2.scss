@@ -1,11 +1,48 @@
+//FUNCTION
+@function multiplicacion($numero1, $numero2) {
+    $result: 0;
+    $result: $numero1*$numero2;
+    @return $result;
+}
+
 //Herencia
 %section {
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-section {
+#articulosIndex {
     @extend %section;
     padding-right: 5px;
     padding-left: 5px;
+}
+
+#collapseEmpresa {
+    @extend %section;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.divCartas {
+    @extend %section;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+#tablaTallas {
+    @extend %section;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+//ESTRUCTURA DE CONTROL Y LISTA
+@media screen and (max-width: 750px) {
+    $sections: "#articulosIndex", "#collapseEmpresa", ".divCartas";
+
+    @each $section in $sections {
+        #{$section} {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
 }

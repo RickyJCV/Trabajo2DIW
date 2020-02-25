@@ -1,11 +1,30 @@
-#terminos .active {
-    background-color: #FFF !important;
-    color: #000 !important;
-}
-
 //VARIABLE
 $position-relative:relative;
 
 #terminos {
     position: $position-relative;
+}
+
+//MIXIN
+@mixin activo($background, $color) {
+    background-color: $background;
+    color: $color;
+}
+
+#terminos .active {
+    @include activo(#FFF !important, #000 !important);
+}
+
+//ESTRUCTURA DE CONTROL
+
+$colorear : false !default;
+
+#tablaTallas {
+    @if $colorear {
+        background-color: #0080C3;
+    }
+
+    @else {
+        background-color: transparent;
+    }
 }
